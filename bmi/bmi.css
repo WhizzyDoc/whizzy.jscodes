@@ -1,0 +1,50 @@
+body{
+		margin: 0;
+		padding: 0;
+		background: black;
+}
+
+div#container{
+		padding: 3px;
+		margin: 15px;
+		background: blue;
+}
+
+h3{float: left;
+padding-left: 5px;
+color: whitesmoke;
+}
+
+p{float: right;
+padding-right: 3px;}
+
+#cal{margin: 3px;
+     background: wheat;
+height: 250px;
+padding-left: 40px;
+
+
+}
+
+#hed{
+		border: blue solid 1px;
+		border-radius: 40px ;
+		height: 7px;
+}
+
+fieldset{
+		display: inline-block;
+		text-align: center;
+		border: none;
+		
+}
+		
+		fieldset input{
+				text-align: center;
+				float: right;
+				margin-left: 10px;
+				height: 20px;
+				width: 150px;
+				border: gray;
+		}
+
