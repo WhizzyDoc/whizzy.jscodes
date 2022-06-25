@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+		<link rel="stylesheet" href="id.css">
+		<title>ID Maker</title>
+	</head>
+	<body>
+		<div class="login" id="login">
+  <h1><i class="fa fa-id-card"></i>&nbsp;ID Maker</h1>
+    <form method="GET" id="regForm">
+    
+       	<label>First Name</label>
+      <input type="text" id="fn" placeholder="First Name" autocapitalize="words" required />
+      
+      <label>Middle Name</label>
+      <input type="text" id="mn" placeholder="Middle Name" autocapitalize="words">
+      
+      <label>Last Name</label>
+      <input type="text" id="ln" placeholder="Last Name" autocapitalize="words" required>
+   
+      <label><i class="fa fa-calender-check"></i>&nbsp;Date Of Birth</label>
+      <input type="date" min="1-1-1960" max="31-12-2004" id="dob" required>
+      
+      <label><i class="fa fa-user"></i>&nbsp;Gender</label>
+      <select id="gender" required>
+      	<option value="" selected disabled></option>
+      	<option value="male">Male</option>
+      	<option value="female">Female</option>
+      </select>
+      
+      <label><i class="fa fa-flag"></i>&nbsp;Nationality</label>
+      <select id="nationality" required>
+      	<option value="" selected disabled></option>
+      	<option value="Nigeria">Nigeria</option>
+      	<option value="US">USA</option>
+      </select>
+  
+      
+      <label><i class="fa fa-building"></i>&nbsp;Name Of Organization</label>
+      <input type="text" id="org" placeholder="Name Of Organization" autocapitalize="characters" required>
+      
+      <label><i class="fa fa-map-marker"></i>&nbsp;Address of Organization</label>
+        <input type="text" id="site" placeholder="" />
+        
+        <label>Occupation</label>
+        <input type="text" id="occupation" placeholder="" required/>
+        
+        <label><i class="fa fa-paint-brush"></i>&nbsp;Select Color of ID <small>(Default color: black)</small></label>
+        <input type="color" id="color">
+        
+        <label><i class="fa fa-paint-brush"></i>&nbsp;Select Text Color <small>(Default color: black)</small></label>
+        <input type="color" id="tcolor">
+        
+        <label><i class="fa fa-image"></i>&nbsp;Passport Size Photograph<br><small>(.jpg, .jpeg, .png, format of not more than 2MB)</small></label>
+        <input type="file" id="photo" onchange="readFile();" />
+   <!-- you should pick an image file for this to work -->
+   <img src="" width="80px" height="auto" alt="The image file will be shown here." id="result" accept="image/jpg, image/jpeg, image/png" />
+   
+        
+  
+        <div class="btn btn-primary btn-block btn-large" onclick="createID();">Create ID &nbsp;&nbsp;<i class="fa fa-id-card"></i></div>
+        
+
+
+    </form>
+</div>
+
+
+<div class="id" id="id">
+ 
+ <div class="header">
+  
+  <div id="org1"></div>
+  <div id="site1" style="font-size:12px; font-weight:lighter; color:yellow;"></div>
+  
+ </div>
+ 
+ 
+ <div id="pic">
+  <img src="" id="picture" width="100%" height="100%" alt="Passport">
+ </div>
+ 
+ <div class="detail" id="detail">
+  
+  <div>
+  <small>Full Name:</small><br><tt><span id="fullname"></span></tt>
+  </div>
+  
+  <div style="float:right;">
+   <small>Gender:</small><br><tt><span id="gender1"></span></tt>
+  </div>
+  
+  <div>
+   <small>D.O.B:</small><br><tt><span id="dob1"></span></tt>
+  </div>
+  
+  <div style="float:right;">
+   <small>Occupation:</small><br><tt><span id="occupation1"></span></tt>
+  </div>
+  
+  <div>
+   <small>Nationality:</small><br><tt><span id="nationality1"></span></tt>
+  </div>
+  
+  
+  
+ </div>
+    
+</div>
+
+
+
+<div class="idr" id="idr">
+    ID Displays Here
+</div>
+
+
+		
+		<script src="id.js"></script>
+	</body>
+</html>
