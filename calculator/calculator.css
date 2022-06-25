@@ -1,0 +1,146 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin:0;
+	padding:0;
+}
+.container {
+	width:320px;
+	height:fit-content;
+	padding:5px;
+	padding-bottom:10px;
+	background:black;
+	margin:0 auto;
+}
+.title {
+	border: 3px solid black;
+	border-radius:10px;
+	margin-bottom:5px;
+	height:30px;
+	width:100%;
+	font-family: Times New Roman;
+	letter-spacing:3px;
+	text-align:center;
+	font-size:25px;
+	padding:0;
+	padding-bottom:25px;
+	background:black;
+	color:rgb(255,255,255);
+}
+table {
+	background:black;
+	position:relative;
+	width:100%;
+	height:300px;
+	margin:0 auto;
+}
+button {
+	width:100%;
+	height:100%;
+}
+#equal {
+	height:100%;
+	font-size:60px;
+}
+button {
+	height:35px;
+	user-select:none;
+	padding:auto;
+	margin:auto;
+	border-radius:5px;
+	border:none;
+	outline:none;
+	background:rgb(200,50,60);
+	color:white;
+	font-size:2em;
+	-webkit-transition-duration:.5s;
+	transition-duration:.5s;
+}	
+button:hover {
+	background:rgba(200, 50, 60, 0.5);
+}
+#zero, #step {
+	border:5px solid white;
+	border-radius:8px;
+	color: black;
+	box-sizing: border-box;
+	height:60px;
+	width:100%;
+	overflow:scroll;
+	user-select:none;
+	background:white;
+}
+#zero {
+  text-align: right;
+  font-size: 2.3em;
+}
+#step {
+  text-align:left;
+  font-size: 1.7em;
+}
+footer {
+	width:100%;
+	background:black;
+	text-align: center;
+	color: rgb(255,255,255);
+	font-size:15px;
+}
+
+
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-y:scroll;
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu buttons */
+.sidenav .const {
+  padding: 5px;
+  display:block;
+  width:100%;
+  height:fit-content;
+  font-size: 16px;
+  text-align:left;
+  color: white;
+  background:black;
+  outline:none;
+  border-bottom:1px solid white;
+  -webkit-transition-duration:.5s;
+  transition-duration: 0.5s;
+}
+
+.sidenav #hd {
+	color:white;
+	position:absolute;
+	top:18px;
+	left:10px;
+	font-size:30px;
+}
+
+/* When you mouse over the navigation buttons, change their color */
+.sidenav .const:hover {
+  background:gray;
+}
+.sidenav .conv:hover {
+  background:gray;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
